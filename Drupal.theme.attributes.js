@@ -10,7 +10,9 @@
  *   for that key. Multiple values from arrays will be joined with spaces.
  *
  *   To create boolean type attributes, use an empty string or the attribute
- *   name as the value.
+ *   name as the value. When an empty string is used, the attribute will be
+ *   output as e.g. ` hidden=""`. We do this to allow empty non-boolean
+ *   attributes to be output too.
  *
  *   Note that attributes with multiple values MUST be passed into the attrs
  *   object as arrays--spaces will be removed from attribute strings!
